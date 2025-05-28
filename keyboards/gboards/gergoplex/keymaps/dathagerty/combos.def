@@ -1,0 +1,41 @@
+// List any combo dictionaries you want loaded to your device below!
+
+// these have been rolled into `gergoplex.def` since I'm not using QWERTY
+// QMK wide includes
+//#include "combos/germ-vim-helpers.def"
+//#include "combos/germ-mouse-keys.def"
+// Word completion
+// #include "combos/eng-combos.def"
+
+// Gergoplex specfic combos
+//  ,-----------------------------.      ,-----------------------------.
+//  |     |     /     |     |     |      |     |     |     \     |     |
+//  |-----+-----+-----+-----+-----|      |-----+-----+-----+-----+-----|
+//  |     |     |     :     <     |      |     >     =     |     |     |
+//  |-----+-----+-----+-----+-----|      |-----+-----+-----+-----+-----|
+//  |     |     |     -     |     |      |     |     _     |     |     |
+//  `-----------------------------'      `-----------------------------'
+//               .-----------------.    .-----------------.
+//               |     |     |     HYPER      |     |     |
+//               '-----------------'    '-----------------'
+//
+//  ,-----------------------------.      ,-----------------------------.
+//  |  F  |  D  |  L  |  B  |  V  |      |  J  |  G  |  O  |  U  |  ,  |
+//  |-----+-----+-----+-----+-----|      |-----+-----+-----+-----+-----|
+//  |  S  |  T  |  R  |  N  |  K  |      |  Y  |  M  |  A  |  E  |  I  |
+//  |-----+-----+-----+-----+-----|      |-----+-----+-----+-----+-----|
+//  |  Z  |  Q  |  X  |  H  |  P  |      |  W  |  C  |  '  |  ;  |  .  |
+//  `-----------------------------'      `-----------------------------'
+//               .-----------------.    .------------------.
+//               | ESC | TAB | SPC |    | ENT | BSPC | DEL |
+//               '-----------------'    '------------------'
+
+COMB(ouBacksl,    KC_BSLS,          KC_O,          KC_U)
+COMB(nkLess,      KC_LT,            SFT_T(KC_N),   KC_K)
+COMB(ymGreat,     KC_GT,            KC_Y,          SFT_T(KC_M))
+COMB(xhDash,      KC_MINS,          KC_X,          KC_H)
+COMB(cqUnds,      KC_UNDS,          KC_C,          KC_QUOT)
+COMB(dlSlash,     KC_SLSH,          KC_D,          KC_L)
+COMB(seHyper,     OSM(MOD_HYPR),    LT(3, KC_SPC), LT(4, KC_ENT))
+COMB(rnCol,       KC_COLN,          CTL_T(KC_R),   SFT_T(KC_N))
+COMB(maEqual,     KC_EQL,           SFT_T(KC_M),   CTL_T(KC_A))
