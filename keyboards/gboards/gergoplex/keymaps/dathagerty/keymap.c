@@ -104,15 +104,15 @@ enum combos {
     MA_EQL
 };
 
-const uint16_c_t PROGMEM ou_combo[] = {KC_O, KC_U, COMBO_END};
-const uint16_c_t PROGMEM nk_combo[] = {HOME_N, KC_K, COMBO_END};
-const uint16_c_t PROGMEM ym_combo[] = {KC_Y, HOME_M, COMBO_END};
-const uint16_c_t PROGMEM xh_combo[] = {KC_X, KC_H, COMBO_END};
-const uint16_c_t PROGMEM cq_combo[] = {KC_C, KC_Q, COMBO_END};
-const uint16_c_t PROGMEM dl_combo[] = {KC_D, KC_L, COMBO_END};
-const uint16_c_t PROGMEM te_combo[] = {LT(_MOU, KC_TAB), LT(_SYM, KC_ENT), COMBO_END};
-const uint16_c_t PROGMEM rn_combo[] = {HOME_R, HOME_N, COMBO_END};
-const uint16_c_t PROGMEM ma_combo[] = {HOME_M, HOME_A, COMBO_END};
+const uint16_t PROGMEM ou_combo[] = {KC_O, KC_U, COMBO_END};
+const uint16_t PROGMEM nk_combo[] = {HOME_N, KC_K, COMBO_END};
+const uint16_t PROGMEM ym_combo[] = {KC_Y, HOME_M, COMBO_END};
+const uint16_t PROGMEM xh_combo[] = {KC_X, KC_H, COMBO_END};
+const uint16_t PROGMEM cq_combo[] = {KC_C, KC_Q, COMBO_END};
+const uint16_t PROGMEM dl_combo[] = {KC_D, KC_L, COMBO_END};
+const uint16_t PROGMEM te_combo[] = {LT(_MOU, KC_TAB), LT(_SYM, KC_ENT), COMBO_END};
+const uint16_t PROGMEM rn_combo[] = {HOME_R, HOME_N, COMBO_END};
+const uint16_t PROGMEM ma_combo[] = {HOME_M, HOME_A, COMBO_END};
 
 combo_t key_combos[] = {
     [OU_BSLS] = COMBO(ou_combo, KC_BSLS),
