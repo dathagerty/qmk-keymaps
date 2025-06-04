@@ -66,7 +66,7 @@ enum {
 // Look Ma, I'm Gene Kelly!
 // It's tap dances
 
-// TODO: tap dance for caps word
+// TODO: tap dance for caps word?
 enum {
     TD_TBAS,
     TD_TTAP,
@@ -78,19 +78,20 @@ tap_dance_action_t tap_dance_actions[] = {
     [TD_TTAP] = ACTION_TAP_DANCE_LAYER_TOGGLE(KC_NO, _TAP),
 };
 
-// Welcome to good keyboard, home of the good keyboard, can I take your order?
-// Combos
-//
-//  ,-----------------------------.     ,-----------------------------.
-//  |  F  |  D  /  L  |  B  |  V  |     |  J  |  G  |  O  \  U  |  ,  |
-//  |-----+-----+-----+-----+-----|     |-----+-----+-----+-----+-----|
-//  |  S  |  T  |  R  :  N  <  K  |     |  Y  >  M  =  A  |  E  |  I  |
-//  |-----+-----+-----+-----+-----|     |-----+-----+-----+-----+-----|
-//  |  Z  |  Q  |  X  -  H  |  P  |     |  W  |  C  _  '  |  ;  |  .  |
-//  `-----------------------------'     `-----------------------------'
-//               .-----------------.   .------------------.
-//               | ESC | TAB | SPC HYPER ENT | BSPC | DEL |
-//               '-----------------'   '------------------'
+/* Welcome to good keyboard, home of the good keyboard, can I take your order?
+ * Combos
+ *
+ *  ,-----------------------------.     ,-----------------------------.
+ *  |  F  |  D  /  L  |  B  |  V  |     |  J  |  G  |  O  \  U  |  ,  |
+ *  |-----+-----+-----+-----+-----|     |-----+-----+-----+-----+-----|
+ *  |  S  |  T  |  R  :  N  <  K  |     |  Y  >  M  =  A  |  E  |  I  |
+ *  |-----+-----+-----+-----+-----|     |-----+-----+-----+-----+-----|
+ *  |  Z  |  Q  |  X  -  H  |  P  |     |  W  |  C  _  '  |  ;  |  .  |
+ *  `-----------------------------'     `-----------------------------'
+ *               .-----------------.   .------------------.
+ *               | ESC | SPC | TAB HYPER ENT | BSPC | DEL |
+ *               '-----------------'   '------------------'
+ */
 
 enum combos {
     OU_BSLS,
